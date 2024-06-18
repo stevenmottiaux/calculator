@@ -1,0 +1,109 @@
+:root {
+    font-family: 'Roboto Mono', monospace;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+main {
+    width: 80%;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+}
+
+.calculator, .history {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.history {
+
+}
+
+.display {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: right;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button {
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button.operator {
+    background-color: #ff9500;
+    color: white;
+}
+
+.button.number {
+    background-color: #d4d4d2;
+}
+
+.button.equal {
+    background-color: #ff9500;
+    color: white;
+    grid-column: span 2;
+}
+
+.history {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: left;
+}
+
+.history h2 {
+    margin-top: 0;
+}
+
+.history ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.history li {
+    margin-bottom: 10px;
+}
